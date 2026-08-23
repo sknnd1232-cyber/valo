@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>발로란트</title>
+        <style>
+            .fake {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>발로란트 매드무비</h1>
+        <p>
+            <a class="link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                엄청난 70세 박영춘의 생전 개쩌는 매드무비
+            </a>
+            <a class="fake" href="zzzzzz.html">
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <small>(인줄 알았냐)</small>
+            </a>
+        </p>
+        <script>
+            const link = document.querySelector(".link")
+            const fake = document.querySelector(".fake")
+
+            link.onclick = () => {
+                localStorage.setItem("트롤당함", "예")
+            }
+
+            const troll = () => {
+                if (localStorage.getItem("트롤당함") == "예") {
+                    fake.style.display = "inline"
+                }
+            }
+
+            troll()
+            onstorage = troll
+        </script>
+    </body>
+</html>
